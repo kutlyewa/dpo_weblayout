@@ -1,0 +1,355 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('RobotoRegular'),
+         url('../fonts/RobotoRegular.woff2') format('woff2'),
+         url('../fonts/RobotoRegular.woff') format('woff');
+font-weight: 400;
+font-style: normal;
+font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('RobotoBold'),
+         url('../fonts/RobotoBold.woff2') format('woff2'),
+         url('../fonts/RobotoBold.woff') format('woff');
+font-weight: 700;
+font-style: normal;
+font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 1140px;
+}
+.header-logo,
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+.header-logo__img,
+.hero__img,
+.blog-about__image,
+.blog-about__icon,
+.teachers-box__img,
+.blog-preview__image {
+  max-width: 100%;
+}
+body {
+  min-width: 320px;
+    font-family: 'Roboto', sans-serif;
+  background: #fff;
+}
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}  
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn {
+  background: #3f2aff;
+  border-radius: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.flex {
+  display: flex;
+}  
+.title {
+  margin: 0;
+  padding: 0;
+}
+.descr {
+  margin: 0;
+  padding: 0;
+}
+.section-offset {
+  padding: 80px 0;
+}
+/* header */
+.header {
+  padding: 28px 0 26px;
+  background: #3f2aff;
+}
+.header-row {
+  align-items: center;
+}
+.header-logo {
+  padding-left: 20px;
+}
+.header__nav {
+  flex-direction: row-reverse;
+  padding-right: 23px;
+}
+.item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+.item:not(:last-child) {
+  margin-right: 56px;
+}
+.burger {
+  display: none;
+}
+/* hero */
+.hero {
+  padding: 80px 0;
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+}
+.hero-block {
+  position: relative;
+}
+.hero__img::before {
+  content: "";
+  position: absolute;
+  top: -65px;
+  right: 6px;
+  width: 632px;
+  height: 593px;
+  display: block;
+  background-image: url(../img/hero/hero-1440.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blog-hero {
+  padding: 50px 0 47px 6px;
+}
+.blog-hero__title {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  color: #fff;
+}
+.blog-hero__descr {
+  width: 83%;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+}
+.blog-hero__btn {
+  padding: 24px 75.5px;
+  min-width: 270px;
+  font-size: 18px;
+  line-height: 21px;
+}
+/* about */
+.about-block {
+  position: relative;
+  flex-direction: row;
+  margin-bottom: 21px;
+}
+.about-block__img::before {
+  content: "";
+  position: absolute;
+  top: 48%;
+  display: block;  
+  width: 160px;
+  height: 142px;
+  background-image: url(../img/about/about.png);
+  background-size: cover;
+  background-position: center;
+  transform: translateY(-50%);
+}
+.about-block__text {
+  padding-left: 190px;
+}
+.about__subtitle {
+  margin-bottom: 13px;
+  width: 50%;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #2e2b44;
+}
+.about__descr {
+  width: 66%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666;
+}
+.about-box {
+  flex-direction: row;
+  align-items: center;
+}
+.about-box__icon {
+  object-fit: contain;
+}
+.about-box__text {
+  padding-left: 30px;
+}
+.about-box__descr {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #666;
+}
+/* teachers */
+.teachers {
+  padding: 72px 0 69px;
+  background: #212133;
+}
+.teachers__title {
+  margin-bottom: 21px; 
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #fff;
+}
+.teachers-box {
+  flex-direction: column;
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.teachers-box__img {
+  display: block;
+  flex-shrink: 0;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.teachers-box__bottom {
+  flex-basis: 100%;
+  flex-direction: column;
+  padding-top: 32px;
+  background: #212133;
+}
+.teachers-box__title {
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+}
+.teachers-box__descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #85859b;
+}
+/* courses */ 
+ .courses {
+  padding-top: 74px;
+  padding-bottom: 76px;
+  background-color: #fff;
+}
+.courses__title {
+  margin-bottom: 22px;  
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #212133;
+}
+.courses-row:not(:last-child) {
+  margin-bottom: 30px;
+}
+.courses-box {
+  flex-direction: column;
+  height: 100%;
+  background-color: #edf0f9;
+  border-radius: 30px;
+}
+.courses-box::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: 100%;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 20px 0 0;
+ }
+ .coursee-img1::before {
+  background-image: url(../img/courses/courses-1.png);
+ }
+ .coursee-img2::before {
+  background-image: url(../img/courses/courses-2.png);
+ }
+ .coursee-img3::before {
+  background-image: url(../img/courses/courses-3.png);
+ }
+ .coursee-img4::before {
+  background-image: url(../img/courses/courses-4.png);
+ }
+ .courses-box__bottom {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-basis: 100%;
+  padding: 28px 24px 29px 32px;
+ }
+ .courses-box__text {
+  margin-bottom: 32px;
+ }
+.courses-box__title {
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #212133;
+}
+.courses-box__descr {
+  margin-bottom: 14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666;
+}
+.courses-box__btn {  
+  padding: 20.5px 59px;
+  min-width: 202px;
+  font-size: 16px;
+  line-height: 19px;
+}
+/* footer */
+.footer {
+  background: #fff;
+}
+.footer-top {
+  background: #2e2b44;
+}
+.footer__nav {
+  padding: 28px 0 23px;
+}
+.footer-list {
+  display: flex;
+  justify-content: center;
+}
+.footer-item:not(:last-child) {
+  margin-right: 27px;
+}
+.footer__descr {
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #2e2b44;
+}
+.reg {
+  color: #3F2AFF;
+}
